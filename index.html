@@ -5,27 +5,259 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
   </head>
   <body>
     <header class="w-[80%] mx-auto">
-        <h1 class="text-xl font-bold text-blue-950 mb-3">Job Application Tracker</h1>
-        <div class="grid grid-cols-3 gap-8">
-            <div class="bg-white shadow p-4">
-                <p>Total</p>
-                <p class="font-bold text-blue-950">8</p>
-            </div>
-            <div class="bg-white shadow p-4">
-                <p>Interview</p>
-                <p class="font-bold text-green-400">0</p>
-            </div>
-            <div class="bg-white shadow p-4">
-                <p>Rejected</p>
-                <p class="font-bold text-red-500">0</p>
-            </div>
-            
+      <h1 class="text-xl font-bold text-blue-950 mb-3">
+        Job Application Tracker
+      </h1>
+      <div class="grid grid-cols-3 gap-8">
+        <div class="bg-white shadow p-4">
+          <p>Total</p>
+          <p id="total" class="font-bold text-blue-950">8</p>
         </div>
+        <div class="bg-white shadow p-4">
+          <p>Interview</p>
+          <p id="interviewcount" class="font-bold text-green-400">0</p>
+        </div>
+        <div class="bg-white shadow p-4">
+          <p>Rejected</p>
+          <p id="rejectcount" class="font-bold text-red-500">0</p>
+        </div>
+      </div>
     </header>
+    <hr class="text-gray-200 w-[80%] mx-auto mt-3 mb-3" />
+    <main class="w-[80%] mx-auto flex justify-between">
+      <div class="gap-5">
+        <button class="bg-blue-500 text-white shadow px-5 rounded-md" id="all-btn">
+          All
+        </button>
+        <button class="bg-white shadow px-5 rounded-md" id="interview-btn">
+          Interview
+        </button>
+        <button class="bg-white shadow px-5 rounded-md" id="rejected-btn">Rejected</button>
+      </div>
+      <div>
+        <p>8 jobs</p>
+      </div>
+      </main>
+      <section class="w-[80%] mx-auto mt-5">
+      <div class="all-cards flex justify-between border-gray-200 shadow px-4 py-2">
+       <div class="space-y-6">
+        <div>
+          <p class="text-xl font-bold text-blue-950">Mobile First Corp</p>
+          <p>React Native Developer</p>
+        </div>
+        <div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+        </div>
+        <div>
+          <p class="status text-blue-950 font-bold">NOT APPLIED</p>
+          <p class="notes">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+        </div>
+        <div class="gap-3">
+            <button class="interview-btn bg-green-100 shadow text-green-400 px-4 py-2 rounded-md">INTERVIEW</button>
+            <button class="rejected-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">REJECTED</button>
+        </div>
+       </div>
+       <div>
+        <button class="delete-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">Delete</button>
+       </div>
+      </div>
+      </section>
+      <section class="w-[80%] mx-auto mt-5">
+      <div class="all-cards flex justify-between border-gray-200 shadow px-4 py-2">
+       <div class="space-y-6">
+        <div>
+          <p class="text-xl font-bold text-blue-950">Mobile First Corp</p>
+          <p>React Native Developer</p>
+        </div>
+        <div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+        </div>
+        <div>
+          <p class="status text-blue-950 font-bold">NOT APPLIED</p>
+          <p class="notes">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+        </div>
+        <div class="gap-3">
+            <button class="interview-btn bg-green-100 shadow text-green-400 px-4 py-2 rounded-md">INTERVIEW</button>
+            <button class="rejected-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">REJECTED</button>
+        </div>
+       </div>
+       <div>
+        <button class="delete-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">Delete</button>
+       </div>
+      </div>
+      </section>
+      <section class="w-[80%] mx-auto mt-5">
+      <div class="all-cards flex justify-between border-gray-200 shadow px-4 py-2">
+       <div class="space-y-6">
+        <div>
+          <p class="text-xl font-bold text-blue-950">Mobile First Corp</p>
+          <p>React Native Developer</p>
+        </div>
+        <div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+        </div>
+        <div>
+          <p class="status text-blue-950 font-bold">NOT APPLIED</p>
+          <p class="notes">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+        </div>
+        <div class="gap-3">
+            <button class="interview-btn bg-green-100 shadow text-green-400 px-4 py-2 rounded-md">INTERVIEW</button>
+            <button class="rejected-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">REJECTED</button>
+        </div>
+       </div>
+       <div>
+        <button class="delete-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">Delete</button>
+       </div>
+      </div>
+      </section>
+      <section class="w-[80%] mx-auto mt-5">
+      <div class="all-cards flex justify-between border-gray-200 shadow px-4 py-2">
+       <div class="space-y-6">
+        <div>
+          <p class="text-xl font-bold text-blue-950">Mobile First Corp</p>
+          <p>React Native Developer</p>
+        </div>
+        <div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+        </div>
+        <div>
+          <p class="status text-blue-950 font-bold">NOT APPLIED</p>
+          <p class="notes">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+        </div>
+        <div class="gap-3">
+            <button class="interview-btn bg-green-100 shadow text-green-400 px-4 py-2 rounded-md">INTERVIEW</button>
+            <button class="rejected-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">REJECTED</button>
+        </div>
+       </div>
+       <div>
+        <button class="delete-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">Delete</button>
+       </div>
+      </div>
+      </section>
+      <section class="w-[80%] mx-auto mt-5">
+      <div class="all-cards flex justify-between border-gray-200 shadow px-4 py-2">
+       <div class="space-y-6">
+        <div>
+          <p class="text-xl font-bold text-blue-950">Mobile First Corp</p>
+          <p>React Native Developer</p>
+        </div>
+        <div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+        </div>
+        <div>
+          <p class="status text-blue-950 font-bold">NOT APPLIED</p>
+          <p class="notes">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+        </div>
+        <div class="gap-3">
+            <button class="interview-btn bg-green-100 shadow text-green-400 px-4 py-2 rounded-md">INTERVIEW</button>
+            <button class="rejected-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">REJECTED</button>
+        </div>
+       </div>
+       <div>
+        <button class="delete-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">Delete</button>
+       </div>
+      </div>
+      </section>
+      <section class="w-[80%] mx-auto mt-5">
+      <div class="all-cards flex justify-between border-gray-200 shadow px-4 py-2">
+       <div class="space-y-6">
+        <div>
+          <p class="text-xl font-bold text-blue-950">Mobile First Corp</p>
+          <p>React Native Developer</p>
+        </div>
+        <div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+        </div>
+        <div>
+          <p class="status text-blue-950 font-bold">NOT APPLIED</p>
+          <p class="notes">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+        </div>
+        <div class="gap-3">
+            <button class="interview-btn bg-green-100 shadow text-green-400 px-4 py-2 rounded-md">INTERVIEW</button>
+            <button class="rejected-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">REJECTED</button>
+        </div>
+       </div>
+       <div>
+        <button class="delete-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">Delete</button>
+       </div>
+      </div>
+      </section>
+      <section class="w-[80%] mx-auto mt-5">
+      <div class="all-cards flex justify-between border-gray-200 shadow px-4 py-2">
+       <div class="space-y-6">
+        <div>
+          <p class="text-xl font-bold text-blue-950">Mobile First Corp</p>
+          <p>React Native Developer</p>
+        </div>
+        <div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+        </div>
+        <div>
+          <p class="status text-blue-950 font-bold">NOT APPLIED</p>
+          <p class="notes">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+        </div>
+        <div class="gap-3">
+            <button class="interview-btn bg-green-100 shadow text-green-400 px-4 py-2 rounded-md">INTERVIEW</button>
+            <button class="rejected-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">REJECTED</button>
+        </div>
+       </div>
+       <div>
+        <button class="delete-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">Delete</button>
+       </div>
+      </div>
+      </section>
+      <section class="w-[80%] mx-auto mt-5">
+      <div class="all-cards flex justify-between border-gray-200 shadow px-4 py-2">
+       <div class="space-y-6">
+        <div>
+          <p class="text-xl font-bold text-blue-950">Mobile First Corp</p>
+          <p>React Native Developer</p>
+        </div>
+        <div>
+          <p>Remote • Full-time • $130,000 - $175,000</p>
+        </div>
+        <div>
+          <p class="status text-blue-950 font-bold">NOT APPLIED</p>
+          <p class="notes">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+        </div>
+        <div class="gap-3">
+            <button class="interview-btn bg-green-100 shadow text-green-400 px-4 py-2 rounded-md">INTERVIEW</button>
+            <button class="rejected-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">REJECTED</button>
+        </div>
+       </div>
+       <div>
+        <button class="delete-btn bg-red-100 text-red-400 px-4 py-2 rounded-md">Delete</button>
+       </div>
+      </div>
+      </section>
     <script src="script/script.js"></script>
+
   </body>
 </html>
